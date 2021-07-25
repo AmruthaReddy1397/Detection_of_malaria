@@ -6,4 +6,4 @@ Here, a deep learning model is built using a transfer learning model named **inc
 
 Inception_v3 is used for **feature extraction** and a fully connected layer is built using **SVM** as classifier.
 
-A 70-train, 15- validation and 15- test data split is used. For feature extraction, the inceptionv3 model is freezed with pretrained weights by excluding the top fully connected layer. A fully connected layer is built using SVM classifier and kernel regularizer is set to 0.001. The model accuracy obtained is **94.4**
+A 70-train, 15- validation and 15- test data split is used. For feature extraction, the inceptionv3 model is freezed with pretrained weights by excluding the top fully connected layer. A fully connected layer is built using SVM classifier with kernel regularizer = 0.001. The layer is then added to the pretrained model. The model accuracy obtained is **94.4**
